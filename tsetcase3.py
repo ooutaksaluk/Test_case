@@ -17,7 +17,7 @@ import sys
 
 def caesarCipher(s, k):
     # Write your code here
-    blank = ()
+    blank = ''
     for stri in s:
         if stri.isalpha():
             stri = k % 26
