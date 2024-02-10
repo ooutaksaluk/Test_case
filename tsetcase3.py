@@ -20,12 +20,14 @@ def caesarCipher(s, k):
     blank = ''
     for stri in s:
         if stri.isalpha():
-            stri = k % 26
+            shift = k % 26
             if stri.islower():
                 encrypted_char = chr(((ord(stri) - ord('a') + shift) % 26) + ord('a'))
             else:
                 encrypted_char = chr(((ord(stri) - ord('A') + shift) % 26) + ord('A'))
         else:
+            encrypted_char = stri
+        blank += encrypted_char
     return blank
 
 if __name__ == '__main__':
