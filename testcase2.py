@@ -17,7 +17,7 @@ def alternatingCharacters(s):
     # Write your code here
     low = 0
     for i in range(1, len(s)):
-        if s[i] = s[i - 1]:
+        if s[i] == s[i - 1]:
             low += 1
     return low
 
