@@ -17,8 +17,9 @@ def alternate(s):
     # Write your code here
     def answer(non):
         for i in range(1, len(non)):
-            if non[i] == non[i - 1]
-    
+            if non[i] == non[i - 1]:
+                return False
+        return True
     full = 0
     stri = set(s)
     for a1 in stri:
